@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Montserrat&family=Noto+Sans+Mono&family=PT+Sans&family=Poppins&family=Raleway&family=Roboto&family=Alkalami&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>VNotes</title>
+</head>
+<body>
+    <header class="head">
+      <ul>
+        <li>
+          <div class="theme-container">
+            <button id="btn1" class="c1 theme-circles btn"></button>
+            <button id="btn2" class="c2 theme-circles btn"></button>
+            <button id="btn3" class="c3 theme-circles btn"></button>
+            <button id="btn4" class="c4 theme-circles btn"></button>
+            <div class="dropdown">
+              <button class="dropbtn">T</button>
+              <div class="dropdown-content">
+                <button style="--font: 'Lexend Exa', sans-serif">Lexend Exa</button></br>
+                <button style="--font: 'Montserrat', sans-serif">Montserrat</button></br>
+                <button style="--font: 'Noto Sans Mono', monospace">Noto Sans Mono</button></br>
+                <button style="--font: 'Poppins', sans-serif">Poppins</button></br>
+                <button style="--font: 'PT Sans', sans-serif">PT Sans</button></br>
+                <button style="--font: 'Raleway', sans-serif">Raleway</button></br>
+                <button style="--font: 'Roboto', sans-serif">Roboto</button></br>
+                <button style="--font: 'Alkalami', sans-serif">Alkalami</button></br>
+                <button style="--font: 'Ubuntu', sans-serif">Ubuntu</button></br>
+                <button style="--font: 'pixel'" id="pixelButton">Pixel</button></br>
+              </div>
+            </div>
+          </div>
+          <button class="close-cards-btn" id="close-cards-btn">X</button>
+        </li>
+        <li class="social-cards">
+          <a target="_blank" href=""><img alt="Portfolio" src="./assets/hammer.png"/></a>
+          <a target="_blank" href=""><img alt="Github" src="./assets/github_white.png"/></a>
+        </li>
+      </ul>
+    </header>
+    
+    
+    <main>
+      <canvas id="canvas"></canvas>
+      
+      <section class="board">
+        <div class="selection"></div>            
+      </section>
+    </main>
+    
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/canvas.js" type="module"></script>
+  </body>
+</html>
